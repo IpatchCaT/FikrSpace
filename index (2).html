@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fikr Study Desk</title>
+<style>
+:root{color-scheme:light;--ink:#182b2b;--slate:#4c6461;--line:#dce5df;--mint:#e6f1e9;--paper:#f6f8f5;--green:#214d41;--gold:#deb77c}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}a{color:#235e50;overflow-wrap:anywhere}.layout{min-height:100vh;display:grid;grid-template-columns:238px minmax(0,1fr)}aside{background:#142f2b;color:white;padding:30px 20px;display:flex;flex-direction:column;gap:40px}.brand{display:flex;gap:12px;align-items:center;font-family:Georgia,serif;font-size:29px;line-height:1}.brand small{display:block;color:#b6ccc1;font:13px/1.4 system-ui;margin-top:5px}.mark{display:grid;place-items:center;width:41px;height:41px;border:1px solid #618174;border-radius:12px;color:#f2c68c;font:27px Georgia}.nav{display:grid;gap:7px}.nav button{text-align:left;background:transparent;border-color:transparent;color:#c4d6cd}.nav button[aria-current=page]{background:#27473f;color:white}.nav span{display:inline-block;width:27px;color:var(--gold)}.sidebar-foot{margin-top:auto;color:#aec7bb;font-size:13px;padding:10px}main{min-width:0}.top{background:white;border-bottom:1px solid var(--line);height:67px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,5vw,72px);font-size:14px;color:var(--slate)}.wrap{max-width:1180px;margin:auto;padding:34px clamp(18px,5vw,65px) 70px}.hero{background:#20463d;border-radius:20px;padding:34px clamp(24px,5vw,58px);color:white;position:relative;overflow:hidden}.hero:after{content:'';position:absolute;right:-110px;top:-165px;width:410px;height:410px;border:1px solid #54786a;border-radius:50%;box-shadow:0 0 0 28px #285147,0 0 0 29px #54786a,0 0 0 58px #285147,0 0 0 59px #54786a;pointer-events:none}.hero>*{position:relative;z-index:1}.hero h1{color:white;font-size:clamp(38px,6vw,65px);margin:0}.hero p{color:#d4e3dc;max-width:490px;margin-bottom:0}.hero .eyebrow{color:#f0c694}.eyebrow{color:#476e60;text-transform:uppercase;letter-spacing:.13em;font-size:12px;font-weight:750}h1,h2,h3{font-family:Georgia,serif;line-height:1.14;font-weight:500}h1{font-size:44px;margin:0 0 12px}h2{font-size:28px;margin:0 0 10px}h3{font-size:23px;margin:24px 0 10px}p{margin:8px 0 16px}.panel{border:1px solid var(--line);border-radius:16px;background:white;padding:24px;margin-top:22px}.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.spread{justify-content:space-between}.muted,small{color:var(--slate)}small{font-size:13px}.bubble{background:var(--mint);border-radius:4px 13px 13px 13px;padding:13px 16px;margin:16px 0;color:#294b41}.field{display:grid;gap:6px;margin:12px 0}.field label{font-size:14px;font-weight:650}input:not([type=checkbox]),textarea,select{font:inherit;width:100%;border:1px solid #bdcfc5;border-radius:8px;padding:10px 12px;color:var(--ink);background:#fcfdfc}textarea{min-height:96px;resize:vertical}button{border:1px solid var(--line);border-radius:8px;background:white;color:var(--ink);padding:9px 13px;font-size:14px;font-weight:650}button:hover{background:var(--mint)}button.primary{background:var(--green);color:white;border-color:var(--green)}button.primary:hover{background:#326656}button:disabled{opacity:.55;cursor:wait}button:focus-visible,input:focus-visible,textarea:focus-visible,[contenteditable]:focus-visible,a:focus-visible{outline:2px solid #628f7e;outline-offset:3px}.status{min-height:24px;margin:10px 0 0;color:#365d50}.error{color:#9b342a}.cards{display:grid;gap:12px;margin-top:16px}.study-card{border:1px solid var(--line);border-radius:10px;padding:15px}.study-card p{margin:4px 0}.document{max-width:100%}.editable{white-space:pre-wrap;min-height:25px;border:1px solid transparent;border-radius:5px;padding:3px;overflow-wrap:anywhere}.editable:hover,.editable:focus{border-color:#b9cfc4}.table-scroll{overflow:auto;margin:10px 0}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:8px;border:1px solid var(--line);text-align:left;min-width:78px;vertical-align:top}th{background:var(--mint)}details summary{cursor:pointer;font-size:14px;color:var(--green);font-weight:650}dialog{border:1px solid var(--line);border-radius:15px;width:min(900px,95vw);padding:18px;color:var(--ink)}dialog::backdrop{background:#142f2b90}iframe{width:100%;height:min(64vh,720px);border:1px solid var(--line);border-radius:8px;margin:12px 0}[hidden]{display:none!important}
+.arabic{font-family:system-ui,sans-serif;font-size:22px;line-height:1.9}.religion-result{margin:12px 0}.religion-result .row{margin-bottom:8px}#religion-own{margin:15px 0}
+@media(max-width:750px){.layout{display:block}aside{padding:15px;gap:14px}.nav{display:flex;flex-wrap:wrap;gap:3px}.nav button{padding:6px 8px}.nav span,.sidebar-foot{display:none}.top{height:46px}.wrap{padding-top:18px}.hero{padding:24px 20px}.hero:after{opacity:.5}.panel{padding:17px}}
+</style>
+</head><body>
+<div class="layout">
+<aside><div class="brand"><div class="mark" aria-hidden="true">Fi</div><div>Fikr<small>Study Desk</small></div></div>
+<nav class="nav" aria-label="Workspace">
+<button data-view="workspace" aria-current="page"><span aria-hidden="true">▤</span>Workspace</button>
+<button data-view="library"><span aria-hidden="true">▥</span>Saved studies</button>
+<button data-view="notes"><span aria-hidden="true">≡</span>Notes & references</button>
+<button data-view="religion"><span aria-hidden="true">◇</span>Religion Space</button>
+</nav><div class="sidebar-foot">Studies and notes are saved in this browser.</div></aside>
+<main><div class="top"><span id="crumb">Workspace</span><span>Fikr Study Desk</span></div><div class="wrap">
+<section id="workspace">
+<div class="hero"><p class="eyebrow">Reading workspace</p><h1>Turn reading into notes.</h1><p>Bring a webpage, study its key ideas, and save a PDF you can come back to.</p></div>
+<section class="panel"><h2>Start a study</h2><div class="bubble">Paste a public webpage link. Add a focus if you want the notes to emphasize a particular topic.</div>
+<form id="source-form"><div class="field"><label for="url">Webpage link</label><input id="url" type="url" placeholder="https://example.com/article" autocomplete="off"></div>
+<div class="field"><label for="focus">Study focus <small>(optional)</small></label><input id="focus" placeholder="e.g. Focus on the methodology" maxlength="240"></div>
+<details id="manual"><summary>Use pasted article text</summary><div class="field"><label for="manual-title">Article title <small>(optional)</small></label><input id="manual-title" maxlength="200"></div><div class="field"><label for="article">Article text</label><textarea id="article" placeholder="Paste the article or excerpt here"></textarea></div></details>
+<div class="row" style="margin-top:16px"><button class="primary" id="generate">Generate study notes</button><button type="button" id="example">Try a sample</button></div></form><p id="status" class="status" role="status"></p></section>
+<article id="document" class="panel document" hidden></article>
+</section>
+<section id="library" hidden><h1>Saved studies</h1><div class="panel"><div class="field"><label for="search">Search by title, topic, or source</label><input id="search" type="search" placeholder="Search studies"></div><div class="cards" id="saved"></div></div></section>
+<section id="notes" hidden><h1>Notes & references</h1><p class="muted" id="notes-context"></p><div class="panel"><div class="field"><label for="personal">Personal notes</label><textarea id="personal"></textarea></div><label><input type="checkbox" id="include"> Include these notes and links in the study PDF</label><p id="notes-status" class="status" role="status"></p></div>
+<div class="panel"><h2>Reference links</h2><form id="reference-form"><div class="field"><label for="ref-url">Reference URL</label><input id="ref-url" type="url" required placeholder="https://"></div><div class="field"><label for="ref-title">Title <small>(optional)</small></label><input id="ref-title"></div><div class="field"><label for="ref-note">Why I saved it <small>(optional)</small></label><textarea id="ref-note"></textarea></div><div class="row"><button class="primary" id="ref-submit">Add reference</button><button id="ref-cancel" type="button" hidden>Cancel edit</button></div></form><div class="cards" id="refs"></div></div></section>
+<section id="religion" hidden>
+<h1>Religion Space</h1><p class="muted">Explore how a scientific study relates to the Quran and hadith.</p>
+<div class="panel">
+<div class="field"><label for="religion-study">Saved study</label><select id="religion-study"></select></div>
+<p id="religion-empty" hidden>Open or create a study to save a reflection.</p>
+<div id="religion-tools" hidden>
+<form id="religion-form"><div class="field"><label for="religion-claim">Claim or topic to explore</label><textarea id="religion-claim" maxlength="1200" required></textarea></div>
+<button class="primary">Find connections</button></form>
+<p class="muted" style="margin-top:12px">Suggestions come from a curated collection. Add a source you have found when a topic is outside its coverage.</p>
+<div id="religion-results" aria-live="polite"></div>
+<div class="field"><label for="religion-evidence">Your evidence notes and source links</label><textarea id="religion-evidence" placeholder="Record what the research measured and what remains uncertain."></textarea></div>
+<div class="field"><label for="religion-reflection">Your reflection</label><textarea id="religion-reflection"></textarea></div>
+<details><summary>Add a Quran or hadith reference</summary>
+<form id="religion-reference">
+<div class="field"><label for="religion-cite">Ayah or hadith citation</label><input id="religion-cite" required maxlength="180"></div>
+<div class="field"><label for="religion-url">Source URL</label><input id="religion-url" type="url" placeholder="https://" required></div>
+<div class="field"><label for="religion-type">Connection</label><select id="religion-type"><option value="theme">Thematic reflection</option><option value="direct">Direct topic connection</option></select></div>
+<div class="field"><label for="religion-context">How it relates</label><textarea id="religion-context" maxlength="1600" required></textarea></div>
+<button>Add citation</button></form></details>
+<div id="religion-own" class="cards"></div>
+<label><input type="checkbox" id="religion-include"> Include Religion Space in this study PDF</label>
+<p id="religion-status" class="status" role="status"></p>
+</div></div></section>
+</div></main></div>
+<dialog id="preview"><div class="row spread"><h2>PDF preview</h2><button id="close-preview">Close</button></div><iframe id="pdf-frame" title="Study PDF preview"></iframe><div class="field"><label for="filename">PDF filename</label><input id="filename"></div><button class="primary" id="download">Download PDF</button></dialog>
+<script src="./pdf-lib.js" defer></script><script>/* APP_SCRIPT */</script>
+</body></html>

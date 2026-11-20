@@ -1,0 +1,6 @@
+{
+  "name": "fikr-study-desk",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-11-20",
+  "build": {"command": "npm run build"}
+}
